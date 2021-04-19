@@ -1,0 +1,42 @@
+.mm-menu {
+	--mm-color-background: #{$color-primary};
+	--mm-color-text: #{$color-white};
+}
+
+#mm-1 .mm-navbar__title:not([href="#mm-0"]), #mm-0 .mm-navbar__title {
+	background-color: #fff;
+	transition: .3s;
+
+	& img {
+		width: 100%;
+		height: 70px;
+		padding: 10px 0;
+
+		object-fit: contain;
+	}
+}
+
+.mm-navbar__title {
+	transition: .3s;
+	color: rgba(255,255,255,0.7) !important;
+}
+
+.mm-listitem__text {
+	white-space: normal;
+}
+
+.mm-listitem:after {
+	left: 0;
+}
+
+.mm-panel:after{
+	height: 1px;
+}
+
+#mm-js-contacts-menu {
+
+	& .mm-listitem:after {
+		width: calc(100% - 40px);
+		left: 20px;
+	}
+}

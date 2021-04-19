@@ -1,0 +1,17 @@
+/// Breakpoint variables
+///
+/// The breakpoints are the same as in bootstrap $grid-breakpoints list, 
+/// but are availiable as variables for easier usage in @media queries.
+///
+/// $grid-breakpoints: (
+///     xs: 0,
+///     sm: 576px,
+///     md: 768px,
+///     lg: 992px,
+///     xl: 1200px
+/// ) !default;
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1110px;

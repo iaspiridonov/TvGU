@@ -1,0 +1,55 @@
+//// 
+/// Main styles file. All scss partials and vendor libs 
+/// should be included here. Serves as an enrypoint for 
+/// scss-to-css compilation.
+/// 
+/// SCSS partials are organized according to ITCSS 
+/// (https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/),
+/// but blocks folder is used instead of components.
+/// Good example of using this structure for real project is inuit.css
+/// (https://github.com/inuitcss/inuitcss).
+/// 
+/// Scss files should be documented in sassdoc format (http://sassdoc.com/).
+///
+/// @author Site69
+////
+
+// 1. Settings - used with preprocessors and contain font, colors definitions, etc.
+@import "settings/font-faces";
+@import "settings/breakpoints";
+@import "settings/embed-responsive-ratios";
+@import "settings/variables";
+@import "settings/mmenu-js-variables";
+
+
+// 2. Tools are globally used mixins and functions. 
+// It’s important not to output any CSS in the first 2 layers.
+// @import "tools/xxx";
+
+
+// 3. Generic - reset and/or normalize styles, box-sizing definition, etc. 
+// This is the first layer which generates actual CSS.
+// @import "generic/normalize";
+
+
+// 4. Elements – styling for bare HTML elements (like H1, A, etc.). 
+// These come with default styling from the browser so we can redefine them here. 
+@import "elements/html";
+@import "elements/a";
+@import "elements/h";
+
+
+// 5. Objects – class-based selectors which define undecorated design patterns, 
+// for example media object known from OOCSS
+// @import "objects/o-img-fluid";
+
+
+// 6. Blocks (aka Components) – specific UI components. 
+// This is where the majority of our work takes place 
+// and our UI components are often composed of Objects and Components.
+@import "blocks/nav";
+@import "blocks/header";
+
+// 7. Utilities – utilities and helper classes with ability to override anything 
+// which goes before in the triangle, eg. hide helper class.
+// @import "utilities/u-bg";

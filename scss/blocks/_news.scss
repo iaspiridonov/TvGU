@@ -1,0 +1,106 @@
+.news {
+
+    &__more {
+        display: flex;
+        align-items: center;
+        color: $color-primary;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__all {
+        font-size: 14px;
+
+        & a {
+            color: $color-primary;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.news {
+    
+    &__item {
+        width: 33.33%;
+        height: 186px;
+        padding: 8px;
+
+        &--width2 {
+            width: 66.66%;
+        }
+
+        &--height2 {
+            height: 372px;
+            background-repeat: no-repeat;
+
+            & .news__item-title {
+                color: #fff;
+                margin-bottom: 35px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            
+            & .news__item-rubric {
+                color: #fff;
+            }
+
+            & .news__item-more {
+                color: #fff;
+            }
+
+            & .news__item-wrapper {
+                justify-content: flex-end;
+            }
+        }
+
+        &-title {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &-rubric {
+            font-size: 12px;
+        }
+
+        &-more {
+            letter-spacing: 2px;
+            font-size: 20px;
+            transform: translateY(-5px);
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &-wrapper {
+            position: relative;
+            height: 100%;
+            padding: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

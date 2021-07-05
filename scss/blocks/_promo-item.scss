@@ -1,0 +1,46 @@
+.promo-item {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    height: 566px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--abiturient {
+        background-image: url(/img/abitur.jpg);
+    }
+
+    &--student {
+        background-image: url(/img/stud.jpg);
+    }
+
+    &--employee {
+        background-image: url(/img/empl.jpg);
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 36px;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        & li {
+            margin-bottom: 5px;
+        }
+
+        & a {
+            color: #fff;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

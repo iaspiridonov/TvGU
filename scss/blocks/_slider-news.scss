@@ -1,0 +1,114 @@
+.slider-news {
+    // color: #fff;
+    color: #fff;
+    position: relative;
+    height: 100%;
+    
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        padding: 60px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-size: 16px;
+    }
+
+    &__more {
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &:after {
+            content: '';
+            margin-left: 10px;
+            width: 7px;
+            height: 11px;
+            background-image: url(/img/icon/icon-arrow.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__head {
+        padding: 45px 0 45px 40px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        transition: .3s;
+        cursor: pointer;
+        padding: 25px 40px;
+        height: 25%;
+
+        &:hover {
+            background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%), #ACB8E6;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &-date {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &-wrapper {
+            margin-left: 15px;
+        }
+
+        &-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        &-desc {
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+
+    &__items {
+        height: calc(100% - 126px);
+        overflow-y: scroll;
+        scrollbar-color: #F15F79 #EBEDF3;
+        scrollbar-width: 3px;
+        direction: rtl;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+            background-color: #EBEDF3;
+            border-radius: 16px;
+            left: 0;
+            direction: rtl !important;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #F15F79;
+        }
+    }
+
+    &__container {
+        height: 600px;
+    }
+}

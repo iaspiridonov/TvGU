@@ -8,14 +8,14 @@
 /// Color variables.
 
 $color-default: #eeeeee;
-$color-primary: #229285;
+$color-primary: #E15980;
 $color-secondary: #ff6600;
 $color-white: #ffffff;
 $color-gray: #F4F4F4;
 
 $color-tertiary: #eee;
 
-$color-text: #4d4d4d;
+$color-text: #000;
 $color-text-inverted: #ffffff;
 $color-text-pall: #999999;
 
@@ -29,8 +29,8 @@ $transition-out: all 0.3s;
 
 $font-size-base: 16px;
 $line-height-base: 1.5;
-$font-family-base: "Open Sans", sans-serif;
-$font-family-headings: 'DIN Pro', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-headings: 'Montserrat', sans-serif;
 
 
 // Headings.
@@ -38,12 +38,12 @@ $font-family-headings: 'DIN Pro', sans-serif;
 $headings-margin-bottom: 1.125em;
 $headings-font-family: $font-family-headings;
 $headings-font-style: normal;
-$headings-font-weight: 500;
+$headings-font-weight: 400;
 $headings-line-height: 1.2;
 $headings-color: $color-text;
 
 $h1-font-size: Max(1.25rem, Min(2.5em, 8vw)); 
-$h2-font-size: 2em;
+$h2-font-size: 24px;
 $h3-font-size: 1.75em;
 $h4-font-size: 1.5em;
 $h5-font-size: 1.25em;

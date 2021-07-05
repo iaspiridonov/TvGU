@@ -1,0 +1,17 @@
+.o-low-visible {
+    background: linear-gradient(199.01deg, #2C4FC7 -11.37%, #253E94 302.8%);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: .3s;
+    
+    &:hover {
+        opacity: .9;
+    }
+}

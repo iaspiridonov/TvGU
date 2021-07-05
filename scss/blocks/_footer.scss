@@ -1,0 +1,106 @@
+.footer {
+    background-image: url(/img/footer-bg.jpg);
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        padding-right: 60px;
+
+        &-phone {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.2;
+            color: #fff;
+            margin-bottom: 10px;
+            display: block;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+
+        &-addr {
+            font-size: 14px;
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+
+            & a {
+                margin-right: 20px;
+                transition: .3s;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &__border {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__lists {
+        display: flex;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        padding: 0 20px;
+
+        & li {
+            margin-bottom: 5px;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            & a {
+                color: #fff;
+                font-size: 10px;
+                text-transform: uppercase;
+                line-height: 1;
+            }
+        }
+
+        &-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__copy {
+        padding: 40px 0 0;
+        display: flex;
+        justify-content: space-between;
+
+        & a, & span {
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+}

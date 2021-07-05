@@ -1,0 +1,23 @@
+.tabs {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        padding: 10px 15px;
+        border-radius: 59px;
+        border: 1px solid #F0EFF5;
+        background-color: #fff;
+        color: #BBBFCB;
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover, &.tabs__item--active {
+            background: linear-gradient(114.07deg, #ACB6E5 15.44%, #86FDE8 122.33%), #FFFFFF;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}

@@ -20,6 +20,7 @@
 @import "settings/embed-responsive-ratios";
 @import "settings/variables";
 @import "settings/mmenu-js-variables";
+@import "settings/swiper";
 
 
 // 2. Tools are globally used mixins and functions. 
@@ -36,19 +37,28 @@
 // These come with default styling from the browser so we can redefine them here. 
 @import "elements/html";
 @import "elements/a";
+@import "elements/container--fluid";
 @import "elements/h";
 
 
 // 5. Objects – class-based selectors which define undecorated design patterns, 
 // for example media object known from OOCSS
 // @import "objects/o-img-fluid";
-
+@import "objects/o-low-visible";
 
 // 6. Blocks (aka Components) – specific UI components. 
 // This is where the majority of our work takes place 
 // and our UI components are often composed of Objects and Components.
 @import "blocks/nav";
 @import "blocks/header";
+@import "blocks/promo-item";
+@import "blocks/section";
+@import "blocks/search";
+@import "blocks/slider";
+@import "blocks/slider-news";
+@import "blocks/news";
+@import "blocks/tabs";
+@import "blocks/footer";
 
 // 7. Utilities – utilities and helper classes with ability to override anything 
 // which goes before in the triangle, eg. hide helper class.

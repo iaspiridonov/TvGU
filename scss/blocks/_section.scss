@@ -1,0 +1,10 @@
+.section {
+    padding: 120px 0;
+
+    &--promo {
+        height: 100vh;
+        background-image: url(/img/promo-bg.jpg);
+        display: flex;
+        align-items: center;
+    }
+}

@@ -6,6 +6,10 @@
         color: $color-primary;
         font-weight: 600;
         text-transform: uppercase;
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 
     &__all {

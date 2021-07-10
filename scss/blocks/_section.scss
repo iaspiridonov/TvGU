@@ -1,8 +1,16 @@
 .section {
-    padding: 120px 0;
+    padding: 0 0 80px;
+
+    @media (min-width: $lg) {
+        padding: 0 0 120px;
+
+        &--promo {
+            height: 100vh;
+        }
+    }
 
     &--promo {
-        height: 100vh;
+        height: initial;
         background-image: url(/img/promo-bg.jpg);
         display: flex;
         align-items: center;

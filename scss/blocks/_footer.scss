@@ -1,17 +1,27 @@
 .footer {
     background-image: url(/img/footer-bg.jpg);
-    padding: 50px 0;
+    padding: 30px 0 20px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+
+    @media (min-width: $lg) {
+        padding: 50px 0;
+    }
 
     &__contacts {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: auto;
-        padding-right: 60px;
+        text-align: center;
+        padding-right: 0;
+
+        @media (min-width: $lg) {
+            padding-right: 60px;
+            text-align: left;
+        }
 
         &-phone {
             font-weight: 700;
@@ -33,6 +43,11 @@
         &-social {
             display: flex;
             align-items: center;
+            margin-top: 15px;
+
+            @media (min-width: $lg) {
+                margin-top: 0;
+            }
 
             & a {
                 margin-right: 20px;
@@ -52,14 +67,24 @@
     &__border {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+
+        @media (min-width: $lg) {
+            justify-content: space-between;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
     }
 
     &__lists {
-        display: flex;
+        display: none;
+
+        @media (min-width: $lg) {
+            display: flex;
+        }
     }
 
     &__list {
@@ -93,9 +118,26 @@
     }
 
     &__copy {
-        padding: 40px 0 0;
+        padding: 20px 0 0;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        
+        > * {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: $lg) {
+            padding: 40px 0 0;;
+            text-align: left;
+
+            > * {
+                width: inherit;
+                margin-bottom: 0;
+            }
+        }
 
         & a, & span {
             color: #fff;

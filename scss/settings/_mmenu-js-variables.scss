@@ -1,6 +1,18 @@
 .mm-menu {
-	--mm-color-background: #{$color-primary};
+	--mm-color-background: #{$color-secondary};
 	--mm-color-text: #{$color-white};
+	--mm-color-button: #{$color-white};
+	--mm-color-border: rgba(255, 255, 255, 0.3);
+}
+
+.mm-navbar {
+	background-color: $color-primary;
+	color: #fff;
+}
+
+.mm-navbar__title>span {
+	font-weight: 600;
+	color: #fff;
 }
 
 #mm-1 .mm-navbar__title:not([href="#mm-0"]), #mm-0 .mm-navbar__title {

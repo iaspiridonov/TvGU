@@ -1,13 +1,23 @@
 .search {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: calc(100% - 30px);
     display: flex;
-    height: 100px;
+    height: 60px;
     background: #FFFFFF;
     box-shadow: 9px 11px 26px rgba(0, 0, 0, 0.09);
-    top: -50px;
+    top: -30px;
     transition: .3s;
+
+    @media (min-width: $sm) {
+        height: 80px;
+        top: -40px;
+    }
+
+    @media (min-width: $lg) {
+        height: 100px;
+        top: -50px;
+    }
 
     &:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
@@ -31,10 +41,23 @@
         height: 100%;
         background: url(/img/icon/icon-search.svg), linear-gradient(114.07deg, #ACB6E5 15.44%, #86FDE8 122.33%);
         background-repeat: no-repeat;
-        background-position-x: 35px, center;
+        background-position-x: 10px, center;
         background-position-y: center;
         border: none;
-        width: 18%;
+        padding-left: 30px;
+        width: 140px;
         color: #fff;
+
+        @media (min-width: $sm) {
+            padding-left: 30px;
+            width: 140px;
+            background-position-x: 15px, center;
+        }
+
+        @media (min-width: $md) {
+            width: 180px;
+            padding-left: 30px;
+            background-position-x: 30px center;
+        }
     }
 }

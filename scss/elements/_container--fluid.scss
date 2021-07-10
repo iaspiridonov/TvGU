@@ -1,4 +1,8 @@
 .container--fluid {
-    margin: 0 90px !important;
+    margin: 0 15px !important;
     width: auto;
+
+    @media (min-width: $xl) {
+        margin: 0 90px !important;
+    }
 }

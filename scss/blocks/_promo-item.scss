@@ -1,13 +1,20 @@
 .promo-item {
-    padding: 50px 20px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: #fff;
-    height: 566px;
-    background-position: center;
+    height: 320px;
+    background-position-y: -50px;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
+
+    @media (min-width: $lg) {
+        background-position-y: center;
+        background-position-x: center;
+        padding: 50px 20px;
+        height: 566px;
+    }
 
     &--abiturient {
         background-image: url(/img/abitur.jpg);
@@ -18,12 +25,27 @@
     }
 
     &--employee {
+        margin-top: 0;
+        background-position-y: -10px;
         background-image: url(/img/empl.jpg);
+
+        @media (min-width: $sm) {
+            margin-top: 30px;
+        }
+
+        @media (min-width: $lg) {
+            margin-top: 0;
+            background-position-y: 0px;
+        }
     }
 
     &__title {
         font-weight: 800;
-        font-size: 36px;
+        font-size: 24px;
+
+        @media (min-width: $lg) {
+            font-size: 36px;
+        }
     }
 
     &__list {
@@ -38,8 +60,14 @@
         & a {
             color: #fff;
             text-decoration: underline;
+            font-size: 14px;
+
             &:hover {
                 text-decoration: none;
+            }
+
+            @media (min-width: $md) {
+                font-size: 16px;
             }
         }
     }

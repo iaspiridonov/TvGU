@@ -8,17 +8,30 @@
         width: 100%;
         object-fit: cover;
         height: 100%;
+        min-height: 350px;
     }
 
     &__text {
         position: absolute;
         bottom: 0;
-        padding: 60px;
+        padding: 30px;
+
+        @media (min-width: $lg) {
+            padding: 60px;
+
+            &__title {
+                font-size: 30px;
+            }
+
+            &__more {
+                margin-top: 50px;
+            }
+        }
     }
 
     &__title {
         font-weight: 600;
-        font-size: 30px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
 
@@ -32,7 +45,7 @@
         letter-spacing: 1px;
         display: flex;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 30px;
         color: #fff;
 
         &:hover {
@@ -52,16 +65,32 @@
     }
 
     &__head {
-        padding: 45px 0 45px 40px;
+        padding: 30px 0 0 0;
+
+        @media (min-width: $sm) {
+            padding: 30px 0 20px 0px;
+        }
+
+        @media (min-width: $xl) {
+            padding: 45px 0 45px 40px;
+        }
     }
 
     &__item {
-        display: flex;
+        display: inline-flex;
         align-items: flex-start;
         transition: .3s;
         cursor: pointer;
-        padding: 25px 40px;
-        height: 25%;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+
+        @media (min-width: $sm) {
+            flex-wrap: nowrap;
+        }
+
+        @media (min-width: $lg) {
+            padding: 25px 40px;
+        }
 
         &:hover {
             background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%), #ACB8E6;
@@ -72,6 +101,7 @@
         &-date {
             font-size: 14px;
             font-weight: 400;
+            order: 1;
         }
 
         &-wrapper {
@@ -90,11 +120,15 @@
     }
 
     &__items {
-        height: calc(100% - 126px);
+        height: 400px;
         overflow-y: scroll;
         scrollbar-color: #F15F79 #EBEDF3;
         scrollbar-width: 3px;
         direction: rtl;
+
+        @media (min-width: $lg) {
+            height: calc(100% - 144px);
+        }
 
         &::-webkit-scrollbar {
             width: 3px;
@@ -109,6 +143,10 @@
     }
 
     &__container {
-        height: 600px;
+        height: 100%;
+
+        @media (min-width: $lg) {
+            height: 600px;
+        }
     }
 }

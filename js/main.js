@@ -3,8 +3,11 @@ $(document).ready(function () {
 		slidesPerView: 5,
 		spaceBetween: 48,
 		scrollbar: {
-		  el: ".swiper-scrollbar--main-links",
-		  hide: true,
+			el: ".swiper-scrollbar--main-links",
+			hide: true,
+		},
+		mousewheel: {
+			forceToAxis: true
 		},
 		breakpoints: {
 			320: {
@@ -32,6 +35,9 @@ $(document).ready(function () {
 		scrollbar: {
 		  el: ".swiper-scrollbar--usefull-links",
 		  hide: true,
+		},
+		mousewheel: {
+			forceToAxis: true
 		},
 		breakpoints: {
 			320: {

@@ -4,7 +4,12 @@ $(document).ready(function () {
 		spaceBetween: 48,
 		scrollbar: {
 			el: ".swiper-scrollbar--main-links",
-			hide: true,
+			draggable: true,
+			snapOnRelease: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next--main-links",
+			prevEl: ".swiper-button-prev--main-links",
 		},
 		mousewheel: {
 			forceToAxis: true
@@ -34,7 +39,13 @@ $(document).ready(function () {
 		spaceBetween: 48,
 		scrollbar: {
 		  el: ".swiper-scrollbar--usefull-links",
-		  hide: true,
+		  draggable: true,
+		  snapOnRelease: true,
+		},
+
+		navigation: {
+			nextEl: ".swiper-button-next--usefull-links",
+			prevEl: ".swiper-button-prev--usefull-links",
 		},
 		mousewheel: {
 			forceToAxis: true

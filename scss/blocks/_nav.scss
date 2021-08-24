@@ -24,7 +24,11 @@
 
         @media (min-width: $lg) {
             justify-content: space-between;
-            padding: 0 120px 0 70px;
+            padding: 0 120px 0 50px;
+        }
+
+        @media (min-width: $xl) {
+            padding: 0 120px 0 150px;
         }
 
         @media (min-width: 1600px) {
@@ -70,6 +74,16 @@
             margin-right: 15px;
             line-height: 1;
             min-width: 80px;
+            font-size: 16px;
+            width: min-content;
+
+            @media (min-width: $lg) {
+                font-size: 14px;
+            }
+
+            @media (min-width: $xl) {
+                font-size: 16px;
+            }
 
             &:hover {
                 text-decoration: none;

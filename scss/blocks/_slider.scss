@@ -63,9 +63,20 @@
     bottom: -60px;
     width: 25%;
     margin: 0 auto;
+    cursor: pointer;
 
     &-drag {
         background: #F15F79 !important;
         border-radius: 50px;
     }
+}
+
+.swiper-button-next {
+    right: -30px;
+    color: #2C4FC7;
+}
+
+.swiper-button-prev {
+    left: -30px;
+    color: #2C4FC7;
 }

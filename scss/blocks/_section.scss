@@ -14,10 +14,5 @@
         background-image: url(/img/promo-bg.jpg);
         display: flex;
         align-items: center;
-        padding-top: 40px;
-
-        @media (min-width: $lg) {
-            padding-top: 100px;
-        }
     }
 }

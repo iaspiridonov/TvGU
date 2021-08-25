@@ -15,4 +15,16 @@
         display: flex;
         align-items: center;
     }
+
+    &--bb {
+        border-bottom: 1px solid #E6E6E6;
+        padding-bottom: 0;
+        margin-bottom: 120px;
+    }
+
+    &--bt {
+        border-bottom: 1px solid #E6E6E6;
+        padding-top: 0;
+        margin-top: 120px;
+    }
 }

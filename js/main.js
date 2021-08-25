@@ -2,10 +2,10 @@ $(document).ready(function () {
 
 	$(window).scroll(function() {
 		var height = $(window).scrollTop();
-		if(height > 100){
-			$('header').removeClass('header--inner');
+		if (height > 100) {
+			$('.header--inner').removeClass('header--transparent');
 		} else{
-			$('header').addClass('header--inner');
+			$('.header--inner').addClass('header--transparent');
 		}
 	});
 

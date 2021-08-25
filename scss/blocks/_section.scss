@@ -35,20 +35,20 @@
         position: relative;
         height: 400px;
 
-        @media (min-width: $xl) {
-            height: 630px;
-        }
-
-        @media (min-width: $lg) {
-            height: 550px;
+        @media (min-width: $sm) {
+            height: 400px;
         }
 
         @media (min-width: $md) {
             height: 400px;
         }
 
-        @media (min-width: $sm) {
-            height: 400px;
+        @media (min-width: $lg) {
+            height: 550px;
+        }
+
+        @media (min-width: $xl) {
+            height: 630px;
         }
     }
 }

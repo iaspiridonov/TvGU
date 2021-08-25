@@ -27,4 +27,28 @@
         padding-top: 0;
         margin-top: 120px;
     }
+
+    &--first-inner {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 400px;
+
+        @media (min-width: $xl) {
+            height: 630px;
+        }
+
+        @media (min-width: $lg) {
+            height: 550px;
+        }
+
+        @media (min-width: $md) {
+            height: 400px;
+        }
+
+        @media (min-width: $sm) {
+            height: 400px;
+        }
+    }
 }

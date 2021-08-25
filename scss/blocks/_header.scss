@@ -8,6 +8,25 @@
     width: calc(100% - 30px);
     z-index: 1;
     height: 70px;
+    transition: .3s;
+
+    &--inner {
+        background: none;
+        box-shadow: none;
+
+        & .header__logo {
+            display: none !important;
+
+            &--inner {
+                display: block !important;
+            }
+        }
+
+        & a, & span {
+            color: #fff;
+        }
+
+    }
 
     @media (min-width: $lg) {
         height: 90px;
@@ -46,6 +65,10 @@
         left: initial;
         height: 50px;
         left: calc(50% - 50px);
+
+        &--inner {
+            display: none !important;
+        }
 
         @media (min-width: 420px) {
             left: calc(50% - 75px);

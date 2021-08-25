@@ -1,0 +1,43 @@
+.promo {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__pretitle {
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+
+        @media (min-width: $sm) {
+            font-size: 18px;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 24px;
+        }
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        @media (min-width: $sm) {
+            font-size: 32px;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 60px;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        height: 100%;
+    }
+}

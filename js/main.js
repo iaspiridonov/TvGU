@@ -1,4 +1,14 @@
 $(document).ready(function () {
+
+	$(window).scroll(function() {
+		var height = $(window).scrollTop();
+		if(height > 100){
+			$('header').removeClass('header--inner');
+		} else{
+			$('header').addClass('header--inner');
+		}
+	});
+
 	var swiperMainLikns = new Swiper(".js-swiper--main-links", {
 		slidesPerView: 5,
 		spaceBetween: 48,

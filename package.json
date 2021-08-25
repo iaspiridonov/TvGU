@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bootstrap": "4.6.0",
+    "fancybox": "3.0.1",
+    "jquery": "3.6.0",
+    "masonry-layout": "4.2.2",
+    "mburger-css": "1.3.3",
+    "mmenu-js": "8.5.24",
+    "swiper": "6.7.5"
+  }
+}

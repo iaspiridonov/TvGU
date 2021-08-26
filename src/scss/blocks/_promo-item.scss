@@ -16,18 +16,9 @@
         height: 566px;
     }
 
-    &--abiturient {
-        background-image: url(/img/abitur.jpg);
-    }
-
-    &--student {
-        background-image: url(/img/stud.jpg);
-    }
-
     &--employee {
         margin-top: 0;
         background-position-y: -10px;
-        background-image: url(/img/empl.jpg);
 
         @media (min-width: $sm) {
             margin-top: 30px;

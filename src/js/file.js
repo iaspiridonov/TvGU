@@ -1,29 +1,17 @@
-import $ from 'jquery';
-
-global.jQuery = $;
-global.$ = $;
-
 import Swiper from 'swiper';
-
-import Masonry from 'masonry-layout';
-
+import Masonry from 'masonry-layout'
 import Mmenu from 'mmenu-js';
 
-
 $(document).ready(function () {
-
-  var msnry = new Masonry('.news', {
-    itemSelector: '.news__item'
-  });
-
+  new Masonry('.news', { itemSelector: '.news__item' });
 
   let header = $('.header');
   let navItem = $('.nav-menu__item');
   let navDropWrapper = $('.nav-menu__drop-wrapper')
 
   navItem.click(function () {
-    navDrop = $('#js-nav-drop');
-    navTitle = $(this).find('.nav-menu__link').text();
+    let navDrop = $('#js-nav-drop');
+    let navTitle = $(this).find('.nav-menu__link').text();
     $('.nav-menu__drop-title').html('');
     navDrop.find('.nav-menu__drop').html('');
 
@@ -42,7 +30,7 @@ $(document).ready(function () {
       navDropWrapper.addClass('nav-menu__drop-wrapper--active');
 
       $('.nav-menu__drop-title').text(navTitle);
-      navDropItems = $(this).find('.nav-menu__drop-item').clone();
+      let navDropItems = $(this).find('.nav-menu__drop-item').clone();
       $.each(navDropItems, function (index, val) {
         navDrop.find('.nav-menu__drop').append(val);
       });
@@ -59,7 +47,7 @@ $(document).ready(function () {
     }
   });
 
-  var swiperMainLikns = new Swiper(".js-swiper--main-links", {
+  new Swiper(".js-swiper--main-links", {
     slidesPerView: 5,
     spaceBetween: 48,
     scrollbar: {
@@ -94,7 +82,7 @@ $(document).ready(function () {
     },
   });
 
-  var swiperMainLikns = new Swiper(".js-swiper--usefull-links", {
+  new Swiper(".js-swiper--usefull-links", {
     slidesPerView: 5,
     spaceBetween: 48,
     scrollbar: {
@@ -144,7 +132,7 @@ $(document).ready(function () {
     };
   });
 
-  const menu = new Mmenu("#js-main-menu", {
+  new Mmenu("#js-main-menu", {
     "navbars": [
       {
         "position": "bottom",

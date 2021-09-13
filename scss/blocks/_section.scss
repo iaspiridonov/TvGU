@@ -19,13 +19,13 @@
     &--bb {
         border-bottom: 1px solid #E6E6E6;
         padding-bottom: 0;
-        margin-bottom: 120px;
+        margin-bottom: 60px;
     }
 
     &--bt {
         border-bottom: 1px solid #E6E6E6;
         padding-top: 0;
-        margin-top: 120px;
+        margin-top: 60px;
     }
 
     &--first-inner {
@@ -50,5 +50,19 @@
         @media (min-width: $xl) {
             height: 630px;
         }
+    }
+
+    &--ask {
+        background-image: url(/img/st_bg_1.png), url(/img/st_bg_2.png);
+        background-repeat: no-repeat;
+        background-position-x: left, right;
+        background-position-y: top, bottom;
+    }
+
+    &--studying {
+        background-image: url(/img/st_bg_3.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
     }
 }

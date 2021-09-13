@@ -1,5 +1,6 @@
 .section {
     padding: 0 0 80px;
+    display: block;
 
     @media (min-width: $lg) {
         padding: 0 0 120px;

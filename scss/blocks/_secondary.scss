@@ -1,0 +1,120 @@
+.secondary {
+
+    &__text {
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 300;
+
+        & b {
+            font-weight: 600;
+        }
+
+        @media (min-width: $md) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        position: relative;
+        width: fit-content;
+
+        @media (min-width: $md) {
+            font-size: 24px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background: linear-gradient(270deg, #F15F79 0%, #0052B4 100%);
+        }
+    }
+
+    &__contacts {
+
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @media (min-width: $lg) {
+            flex-direction: column;
+        }
+
+        @media (min-width: $md) {
+            margin-bottom: 50px;
+        }
+
+        &-item {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            @media (min-width: $sm) {
+                width: 50%;
+            }
+
+            @media (min-width: $md) {
+                width: 33.33%;
+            }
+
+            @media (min-width: $lg) {
+                width: 100%;
+            }
+
+            & > img {
+                max-width: 65px;
+                max-height: 65px;
+                min-width: 65px;
+                min-height: 65px;
+            }
+
+            &-wrap {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            &-name {
+                font-weight: 600;
+            }
+
+            &-position {
+                font-style: italic;
+            }
+
+            &-tel {
+                color: #0040AE;
+            }
+        }
+
+        &-more {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #0040AE;
+            font-weight: 600;
+            text-decoration: underline;
+            width: 100%;
+            display: block;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__map {
+        height: 200px;
+
+        @media (min-width: $md) {
+            height: 300px;
+        }
+    }
+}

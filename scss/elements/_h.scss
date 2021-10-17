@@ -8,7 +8,7 @@
 	color: $headings-color;
 }
 
-h1, u-h1 {
+h1, .u-h1 {
 	@extend %heading;
 	font-size: $h1-font-size;
 	text-transform: uppercase;

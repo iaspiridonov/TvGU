@@ -1,0 +1,20 @@
+.schare {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__text {
+        margin-right: 15px;
+        display: block;
+        width: 100%;
+
+        @media (min-width: $sm) {
+            display: inline-block;
+            width: initial;
+        }
+    }
+
+    &__item {
+
+    }
+}
